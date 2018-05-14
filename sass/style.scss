@@ -19,6 +19,14 @@
     max-width: 1138px;
     margin: 0 auto;
 }
+@mixin setFont($font-family, $font-weight, $font-size, $color){
+   font-family: $font-family;
+   font-weight: $font-weight;
+   font-size: $font-size;
+   color: $color;
+} 
+
+
 header{
     height: 150px;
     position: relative;
@@ -30,11 +38,8 @@ header{
             li{
                 display: inline-block;
                 a{
-                    font-family: Roboto;
-                    font-weight: 300;
+                    @include setFont(Roboto, 300, 20px, black);
                     text-decoration: none;
-                    font-size: 20px;
-                    color: #000000;
                     padding-left: 24px;
                 }
             }
@@ -45,13 +50,11 @@ header{
         .header__contacts{
             position: absolute;
             top: 33px;
-            font-size: 22px;
-            font-family: Roboto;
             left: 646px;
+            @include setFont(Roboto, 300, 22px, black);
             .fas{
                 font-size: 26px;
                 color: #00ff72;
-                
             }
             .fa-phone{
                 padding-left: 44px;
@@ -70,30 +73,21 @@ header{
         left: 322px;
         text-transform: uppercase;
          p:nth-child(1){
-            font-family: Roboto;
-            font-weight: 700;
-            color: #1b5478;
-            font-size: 66px;
-        }
+            @include setFont(Roboto, 700, 66px, #1b5478);
+                }
          p:nth-child(2){
-            font-family: Roboto;
-            font-weight: 300;
-            color: #1b5478;
-            font-size: 66px;
-        }
+            @include setFont(Roboto, 300, 66px, #1b5478);
+                   }
     }
     .jumbotron__slogan--lower{
         position: absolute;
         top: 339px;
         left: 322px;
         p{
+            @include setFont(Roboto, 400, 38px, white);
             padding: 15px 30px 13px 27px;
             background-color: #3a7fab;
-            font-family: Roboto;
-            font-weight: 400;
-            font-size: 38px;
-            color: white;
-        } 
+          } 
     }
 
     
