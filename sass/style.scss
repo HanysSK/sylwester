@@ -62,10 +62,14 @@ header{
         }    
 }
 
+.main{
+    background-image: url(warstwa-2.png);
+}
+
 .main__jumbotron{
     height: 600px;
     position: relative;
-    background-image: url(warstwa-2.png);
+   
     line-height: 71.41px;
     .jumbotron__slogan{
         position: absolute;
@@ -75,7 +79,8 @@ header{
          p:nth-child(1){
             @include setFont(Roboto, 700, 66px, #1b5478);
                 }
-         p:nth-child(2){
+         
+                p:nth-child(2){
             @include setFont(Roboto, 300, 66px, #1b5478);
                    }
     }
@@ -83,16 +88,62 @@ header{
         position: absolute;
         top: 339px;
         left: 322px;
-        p{
+        p {
             @include setFont(Roboto, 400, 38px, white);
             padding: 15px 30px 13px 27px;
             background-color: #3a7fab;
           } 
     }
-
-    
+}
+.about{
+    position: relative;
 }
 
+.about__rectangle{
+    float: left;
+    p{
+    background-color: #00ff72;
+    @include setFont(Roboto, 400, 32px, white);
+    padding: 22px 206px 20px 23px;   
+    }
+}
+.content{
+    position: absolute;
+    top: 125px;
+    max-width: 820px;
+    left: 329px;
+    display: flex;
+    p{
+        @include setFont(Roboto, 300, 22px, black);
+        line-height: 35px;
+        span{
+            font-weight: 400;
+        }
+    }
+    hr{
+        position: absolute;
+        top: 660px;
+        background-color: green;
+        height: 1px;
+    }
+    .contact__left{
+        position: absolute;
+        top: 707px;
+        margin-bottom: 118px;
+        p{
+        @include setFont(Roboto, 300, 18px, #a7a7a7 );
+        }
+    }
+    .contact__right{
+        position: absolute;
+        top: 707px;
+        left: 617px;
+        text-align: right;
+        p{
+            @include setFont(Roboto, 300, 18px, #a7a7a7 );
+        }
+    }
+}
 
 
 

@@ -53,9 +53,11 @@ header .header__logo {
 header .header__contacts {
   position: absolute;
   top: 33px;
-  font-size: 22px;
-  font-family: Roboto;
   left: 646px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  color: black;
 }
 
 header .header__contacts .fas {
@@ -67,10 +69,13 @@ header .header__contacts .fa-phone {
   padding-left: 44px;
 }
 
+.main {
+  background-image: url(warstwa-2.png);
+}
+
 .main__jumbotron {
   height: 600px;
   position: relative;
-  background-image: url(warstwa-2.png);
   line-height: 71.41px;
 }
 
@@ -84,15 +89,15 @@ header .header__contacts .fa-phone {
 .main__jumbotron .jumbotron__slogan p:nth-child(1) {
   font-family: Roboto;
   font-weight: 700;
-  color: #1b5478;
   font-size: 66px;
+  color: #1b5478;
 }
 
 .main__jumbotron .jumbotron__slogan p:nth-child(2) {
   font-family: Roboto;
   font-weight: 300;
-  color: #1b5478;
   font-size: 66px;
+  color: #1b5478;
 }
 
 .main__jumbotron .jumbotron__slogan--lower {
@@ -102,12 +107,83 @@ header .header__contacts .fa-phone {
 }
 
 .main__jumbotron .jumbotron__slogan--lower p {
-  padding: 15px 30px 13px 27px;
-  background-color: #3a7fab;
   font-family: Roboto;
   font-weight: 400;
   font-size: 38px;
   color: white;
+  padding: 15px 30px 13px 27px;
+  background-color: #3a7fab;
+}
+
+.about {
+  position: relative;
+}
+
+.about__rectangle {
+  float: left;
+}
+
+.about__rectangle p {
+  background-color: #00ff72;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  padding: 22px 206px 20px 23px;
+}
+
+.content {
+  position: absolute;
+  top: 125px;
+  max-width: 820px;
+  left: 329px;
+  display: flex;
+}
+
+.content p {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  color: black;
+  line-height: 35px;
+}
+
+.content p span {
+  font-weight: 400;
+}
+
+.content hr {
+  position: absolute;
+  top: 660px;
+  background-color: green;
+  height: 1px;
+}
+
+.content .contact__left {
+  position: absolute;
+  top: 707px;
+  margin-bottom: 118px;
+}
+
+.content .contact__left p {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 18px;
+  color: #a7a7a7;
+}
+
+.content .contact__right {
+  position: absolute;
+  top: 707px;
+  left: 617px;
+  text-align: right;
+}
+
+.content .contact__right p {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 18px;
+  color: #a7a7a7;
 }
 
 @media (max-width: 767px) {
